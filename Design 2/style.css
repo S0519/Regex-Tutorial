@@ -1,0 +1,177 @@
+
+html{
+	scroll-behavior: smooth;
+}
+
+.MainHeader{
+	background-color: #0A74A5;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding: 10px 0px;
+}
+
+@media (min-width: 666px) and (max-width: 1280px) {
+
+
+	
+}
+
+
+@media (min-width: 320px) and (max-width: 660px) {
+	
+.MainHeader .Logo{
+	display: none;
+}
+
+
+}
+
+
+/*-----------------------------------*/
+
+.NavBarMain{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-size: 16px;
+  text-align: right;
+}
+
+.NavBarMain .navbar{
+	background-color: transparent;
+	border: #000000 0px solid;
+	margin-bottom: 0px;
+}
+
+.NavBarMain .navbar .navbar-brand{
+	color: #FFFFFF;
+}
+
+.NavBarMain .navbar-nav .nav-link{
+	padding: 10px 10px;
+	margin: 0px 5px;
+}
+
+.NavBarMain .navbar-nav a{
+	color:#FFFFFF;
+	padding: 10px 40px;
+	transition: 1s ease all;
+}
+
+.NavBarMain .navbar-nav a:hover{
+	background-color: #99D3DE;
+	color:#ffffff;
+}
+
+.NavBarMain .navbar-nav .dropdown-item {
+	color: #000000;
+	}
+
+
+.NavBarMain .navbar-nav .dropdown-item:hover {
+	background-color: #99D3DE;
+	color:#ffffff;
+	}
+
+
+@media (min-width: 666px) and (max-width: 1280px) {
+
+.NavBarMain{
+  padding-top: 23px;
+}
+
+}
+
+
+@media (min-width: 320px) and (max-width: 660px) {
+	
+
+.NavBarMain{
+  padding-top: 5px;
+  text-align: left;
+}
+
+.NavBarMain .navbar-toggler{
+  background-color: #FFFFFF;
+}
+
+
+}
+
+/*-----------------------------------*/
+
+.TextDetails{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding-top: 50px;
+}
+
+.TextDetails .Box{
+	box-shadow: 5px 5px 10px 10px #EEEEEE;
+	padding: 10px 20px;
+	margin-bottom: 50px;
+}
+
+.TextDetails h3{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: bold;
+}
+
+@media (min-width: 666px) and (max-width: 1280px) {
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 660px) {
+
+
+}
+
+/*.................................*/
+
+
+.Footer{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-size: 16px;
+  border-top:  #F2F2F2 2px solid;
+	padding: 10px 0px;
+	}
+
+.Footer p{
+	padding-top: 10px;
+	}
+
+
+.Footer a{
+	color: #979797;
+	}
+
+.Footer a:hover{
+	color:#4F4F4F;
+	text-decoration: none;
+	}
+
+.Footer .SocialIcons{
+	text-align: right;
+	}
+
+
+@media (min-width: 666px) and (max-width: 1280px) {
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 660px) {
+	
+.Footer{
+	text-align: center;
+	}
+
+.Footer .SocialIcons{
+	text-align: center;
+	}
+
+
+
+}
+
+
+

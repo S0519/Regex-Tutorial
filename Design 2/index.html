@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>REGEX TUTORIAL</title>
+  <link rel="shortcut icon" href="img/fav_icon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+
+
+<!------------------------------------------------------Website Start Main Header----------------------------------------------------------------------->
+
+<div class="MainHeader">
+<div class="container-fluid">
+<div class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+ <div class="NavBarMain">
+	<nav class="navbar navbar-expand-md">
+    <a href="index.html" class="navbar-brand">REGEX TUTORIAL</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="index.html#Regex-Tutorial" class="nav-item nav-link">Regex Tutorial</a>
+            <a href="index.html#What-is-a-Regex" class="nav-item nav-link">What is a Regex?</a>
+			<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="index.html#Example-of-a-Regex" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Example of a Regex
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		
+            <a href="index.html#First-Component-of-a-Regex" class="dropdown-item">First Component of a Regex</a>
+            <a href="index.html#Second-Component-of-a-Regex" class="dropdown-item">Second Component of a Regex</a>
+            <a href="index.html#Username" class="dropdown-item">Username</a>
+            <a href="index.html#Symbol" class="dropdown-item">Symbol</a>
+            <a href="index.html#Domain-name" class="dropdown-item">Domain name</a>
+            <a href="index.html#Dot" class="dropdown-item">Dot</a>
+            <a href="index.html#Top-level-domain-name" class="dropdown-item">Top-level domain name</a>
+            <a href="index.html#The-dollar-sign" class="dropdown-item">The dollar sign $</a>
+            <a href="index.html#The-last-forward-slash" class="dropdown-item">The last forward slash</a>
+        </div>
+      </li>
+            <a href="index.html#Regex" class="nav-item nav-link">About Author</a>
+        </div>
+    </div>
+</nav>
+	</div>
+	
+	
+	</div>
+	
+</div>
+</div>
+</div>
+
+  
+
+
+<!------------------------------------------------------Start----------------------------------------------------------------------->
+
+
+
+<div class="TextDetails">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+
+
+<div id="Regex-Tutorial" class="Box">
+<h3>Regex Tutorial:</h3>
+<p>In this tutorial we will discuss about Regular Expressions which are known as Regex. We will discuss about what they are,
+ what they are used for and an example of a regex. The example regular expression we will use in this tutorial will be a regex 
+ which is used to validate an email address.</p>
+ </div>
+
+<div id="What-is-a-Regex" class="Box">
+<h3>What is a Regex?:</h3>
+<p>Regex is short form of “Regular Expressions”. A regex is a sequence of character which is used to search a specific pattern in the data.
+ A regex search for a pattern in data and validates if the data is following a specific pattern. Regex are used for multiple purposes;
+ they are used in search algorithms and for validation of input data. In search algorithms, they are used for “find” or “find and replace”
+ actions whereas in validation, it determines whether an input is following a specific pattern or not.</p>
+ </div>
+
+<div id="Example-of-a-Regex" class="Box">
+<h3>Example of a Regex:</h3>
+<p>The  example we chose for this tutorial is a regex which validates an email input.<br>
+  /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/<br>
+  This  regex searches for all the parts of email for example if we have this email <a href="mailto:abc@xyz.com">abc@xyz.com</a> then, it should look for the username &lsquo;abc&rsquo;, symbol &lsquo;@&rsquo;, second-level domain  name &lsquo;xyz&rsquo;, a dot <br>
+  &lsquo;.&rsquo;  and a top-level domain name which in this case is &lsquo;com&rsquo;.<br>
+  The  detailed explanation of the selected regex is given below.</p>
+ </div>
+
+<div id="First-Component-of-a-Regex" class="Box">
+<h3>First Component of a Regex:</h3>
+<p>The first component in the email regex is a forward slash ‘/’. This forward slash denotes the boundaries of a regular expression. </p>
+ </div>
+
+<div id="Second-Component-of-a-Regex" class="Box">
+<h3>Second Component of a Regex:</h3>
+<p>The  second component in the email regex is caret character &lsquo;^&rsquo;. It is also called  as anchor tag &lsquo;^&rsquo;. 
+This anchor tag means the string is starting from this time.<br>
+  The  first two characters of this regex are found in almost every regex because they  show the boundary and start of expression.</p>
+ </div>
+
+<div id="Username" class="Box">
+<h3>Username:</h3>
+<p>The  next component in out selected regular expression is &ldquo;([a-z0-9_\.-]+)&rdquo;. This section  of regex finds the 
+username in the given data or a string.  The &lsquo;()&rsquo; brackets at the start and end of  this component means that this
+ component is a sub-expression of this complete  regular expression. The a-z0-9 shows that it can have alphabets from a to z and 
+ numeric characters from 0 to 9. It also includes some characters after back  slash &lsquo;\.-&rsquo;. In regular expressions any 
+ character after back slash means it  should be found as it is in the expression. So this &lsquo;\.-&rsquo; means that the  username
+ can have a full stop &lsquo;.&rsquo; or dash &lsquo;-&rsquo; in the username.<br>
+  All  these components &lsquo;a-z0-9\.-&rsquo; are surrounded in a square bracket &lsquo;[]&rsquo; and it has  a plus sign &lsquo;+&rsquo; next 
+  which indicates that there must be one or more characters  in the username from this group of components.<br>
+  The  username which should match this sub-expression are &lsquo;abc123&rsquo;, &lsquo;sara.abc&rsquo; etc.</p>
+ </div>
+
+<div id="Symbol" class="Box">
+<h3>Symbol:</h3>
+<p>The at symbol “@” after username section shows that there must be this symbol in the given input data.</p>
+ </div>
+
+<div id="Domain-name" class="Box">
+<h3>Domain name:</h3>
+<p>The  next sub-expression in our regex is &lsquo;([\da-z\.-]+)&rsquo;. This sub-expression search  for the domain name in the given
+ input data after the username and the symbol.  The first component in this part is &lsquo;\d&rsquo; this component search for numeric 
+ digits in the given input data. So this, is basically same as 0-9. The next  component is a-z, which means it can have alphabets
+ from a-z and then we have  &lsquo;\.-&rsquo; which means it can also have full stop and dash &lsquo;-&rsquo;.<br>
+  This  section also has square brackets around and a plus sign which means there must  be one or more character from this section
+  in the given input data.<br>
+  The  domain name which should match this sub-expression are &lsquo;gmail&rsquo;, &lsquo;hotmail&rsquo;,  &lsquo;outlook&rsquo; etc.</p>
+ </div>
+
+<div id="Dot" class="Box">
+<h3>Dot:</h3>
+<p>The next component we have in our regex is ‘\.’. It means that there must be full stop after the domain name and before the next section.</p>
+ </div>
+
+<div id="Top-level-domain-name" class="Box">
+<h3>Top-level domain name:</h3>
+<p>The next sub-expression in our regex is &lsquo;([a-z\.]{2,6})&rsquo;.  This sub-expression searches for the top-level domain name in 
+the given input  data. In this sub-expression we have &lsquo;a-z\.&rsquo; in the square brackets which means  it can have alphabets and 
+a full stop in the input data. This section does not  have &lsquo;\d&rsquo; or &lsquo;0-9&rsquo; so, it can not have any numeric digits.
+ The next thing after  square brackets is a curly bracket with two numeric digits in them &lsquo;{2,6}&rsquo;.  These curly brackets shows
+ the number of characters this sub-expression can  have and the digit between them shows minimum and maximum range. In this case  we have 
+ 2 and 6 which means it can have at least 2 and utmost 6 characters in  the top-level domain.<br>
+  The top-level domain name which should match this  expression are &lsquo;com&rsquo;, &lsquo;org&rsquo;, &lsquo;edu&rsquo; etc.</p>
+ </div>
+
+<div id="The-dollar-sign" class="Box">
+<h3>The dollar sign $:</h3>
+<p>The second last component in our regex is a dollar sign ‘$’. The dollar sign in the regex shows that this is the end of a string.</p>
+ </div>
+
+<div id="The-dollar-sign" class="Box">
+<h3>The last forward slash:</h3>
+<p>The last forward slash in our regular expression shows the end boundary of input string. As there were a forward slash in 
+the beginning which shows the starting boundary this slash shows the end boundary of the regular expression.</p>
+ </div>
+ 
+ 
+<div id="Regex" class="Box">
+<h3>About the author:</h3>
+<p>I am BITENDELO LUBAISHA KANGA, student who likes to become web developer and web designer. </p>
+ </div>
+ 
+ 
+<div id="Regex" class="Box">
+<h3>Link to my profile:</h3>
+<p>Following is the link to my GitHub profile.<br>
+  <a href="https://github.com/S0519" target="blank">https://github.com/S0519</a></p>
+ </div>
+
+
+
+
+
+
+
+</div>	
+</div>
+</div>
+</div>
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+<div class="Footer">
+<div class="container">
+<div class="row">
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><p>&copy; 2021, All rights reserved.</p></div>
+
+</div>
+</div>
+
+
+</body>
+</html>
